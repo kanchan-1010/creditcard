@@ -9,9 +9,18 @@ Interactive Web App: Built with Streamlit, the app allows users to input transac
 Evaluation Metrics: The app evaluates the model's performance using accuracy on both training and test data.
 
 
-Dataset
-The dataset used for training the model is creditcard.csv. This dataset contains credit card transaction records with features like V1, V2, ..., V28, Amount, and a Class label where:
+Dataset:
+Shape: The dataset has 284,807 rows and 31 columns.
 
+Columns: The dataset includes the following columns:
+Time: Time of the transaction.
+V1 to V28: Transformed features obtained via PCA (Principal Component Analysis).
+Amount: Transaction amount.
+Class: Indicates whether the transaction is fraudulent (1) or not (0).
+
+Data Types:
+All columns except Class are of type float64.
+The Class column is of type int64.
 Class = 0: Legitimate Transaction
 Class = 1: Fraudulent Transaction
 
